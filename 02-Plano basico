@@ -1,0 +1,27 @@
+using System;
+using System.Text;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        //Programa que informa o valor a pagar, quando ultrapassado o limite de 100 minutos de um plano.
+        
+        //Permitir caracter especial no input
+        Console.OutputEncoding = Encoding.UTF8; 
+        
+        Console.WriteLine("Plano básico: R$50,00 por 100 minutos");
+        
+        Console.WriteLine("Minutos gastos: ");
+        double minutos = double.Parse(Console.ReadLine());
+        
+        if(minutos > 100){
+            double calculo = (minutos-100) *2;
+            Console.WriteLine("Valor a pagar: R$" + (calculo + 50+",00"));
+        }
+        else{
+            Console.WriteLine("Tudo certo");
+
+        }
+    }
+}
