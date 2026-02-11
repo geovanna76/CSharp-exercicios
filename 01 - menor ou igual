@@ -1,0 +1,27 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        //01 Verificando o menor numero, e numeros iguais.
+        
+        Console.WriteLine ("Digite o primeiro numero: ");
+        int n1 = int.Parse(Console.ReadLine()); //Recebendo e convertendo para inteiro com o .parse
+        Console.WriteLine ("Digite o segundo numero: ");
+        int n2 = int.Parse(Console.ReadLine());
+        
+        Console.WriteLine ("Digite o terceiro numero: ");
+        int n3 = int.Parse(Console.ReadLine());
+        
+        if (n1 < n2 &&  n1 < n3){
+            Console.WriteLine("MENOR: " + n1);
+        }
+        else if(n1 == n2 || n1 == n3 || n2 == n3){
+            Console.WriteLine("Empate");
+        }
+        else{
+             Console.WriteLine("Programa executado com sucesso");
+        }
+    }
+}
